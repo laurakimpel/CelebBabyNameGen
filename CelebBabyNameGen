@@ -5,8 +5,7 @@
 
 <body>
 <?php
-if(!empty($_GET['Mood'])) {<?php
-//CELEBRITY BABY NAME GENERATOR
+if(!empty($_GET['Mood'])) {
 
 //Get user's mood
 $mood = $_GET['Mood'];
@@ -14,7 +13,7 @@ $mood = $_GET['Mood'];
 //Name arrays
 $firstNames = array(
    'Confused'=>array(
-       'Carp','Chair','Bottle Cap','Pencil','Scissors','Keyboard','Concrete','Minivan','Mailbox','Mousepad','Tea Kettle','Inkjet','Penny Loafer','T-Shirt','Xylophone','
+      'Carp','Chair','Bottle Cap','Pencil','Scissors','Keyboard','Concrete','Minivan','Mailbox','Mousepad','Tea Kettle','Inkjet','Penny Loafer','T-Shirt','Xylophone','
        ),
    'Famous'=>array(
       'Bear Blue','Blanket','Apple','Coco','Blue Ivy','Moon Unit','Honey Boo Boo','Diva Thin Muffin','Future','Bronx Mowgli','Saint','North','Sir','Rumi','Harlow Winter','Sparrow James','Cricket Pearl','
@@ -23,8 +22,8 @@ $firstNames = array(
       'Zeus','Ajax','Ares','Diana','Mars','Agamemnon','Lothar','Aoife','Bellatrix','Hedwig','Joan','Ragnara','Ragnar','Xena','Zula','Yuki','Brienne','Èowyn','Imperator Furiosa','
       ),
    'Peaceful'=>array(
-       'Pax','Placido','Solomon','Paxton','Colm','Dove','Paciano','Salome','Paz','Serenity','Pacifica','Paloma','Salome','Eir','Blythe','Carol','Felicity','Joy','Feliciano','
-       ),
+      'Pax','Placido','Solomon','Paxton','Colm','Dove','Paciano','Salome','Paz','Serenity','Pacifica','Paloma','Salome','Eir','Blythe','Carol','Felicity','Joy','Feliciano','
+      ),
    'Indescribable'=>array(
        'Rogue','Gryphon','Rohnin','Alyx-Zandré','Khaytelynne','Taelur','Jaymyie','Azhleigh','Koreyie','Konnur','Zackheiree','McKayleighanne','Mickeighleigh','Kaeyleigh','Aeiyvah','Wolverine','
        ),
