@@ -1,4 +1,11 @@
+<html>
+<head>
+<title>Celebrity Baby Name Generator</title>
+</head>
+
+<body>
 <?php
+if(!empty($_GET['Mood'])) {<?php
 //CELEBRITY BABY NAME GENERATOR
 
 //Get user's mood
@@ -34,3 +41,20 @@ $lastNameindex = array_rand($lastNames);
 $fullName = $firstNames[$mood][$firstNameindex].' '.$lastNames[$lastNameindex];
         print("Your celebrity baby name is ".$fullName);
 exit;
+
+}
+?>
+
+<form method="get">
+<input type="radio" name="Mood" value="confused" /> Confused
+<input type="radio" name="Mood" value="famous" /> Famous
+<input type="radio" name="Mood" value="violent" /> Violent
+<input type="radio" name="Mood" value="peaceful" /> Peaceful
+<input type="radio" name="Mood" value="indescribable" /> Indescribable
+
+<input type="submit" value="Generate My Celebrity Baby Name!" />
+</form>
+
+</body>
+</html>
+
