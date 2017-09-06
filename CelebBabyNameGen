@@ -1,0 +1,36 @@
+<?php
+//CELEBRITY BABY NAME GENERATOR
+
+//Get user's mood
+$mood = $_GET['Mood'];
+
+//Name arrays
+$firstNames = array(
+   'Confused'=>array(
+       'Carp','Chair','Bottle Cap','Pencil','Scissors','Keyboard','Concrete','Minivan','Mailbox','Mousepad','Tea Kettle','Inkjet','Penny Loafer','T-Shirt','Xylophone','
+       ),
+   'Famous'=>array(
+      'Bear Blue','Blanket','Apple','Coco','Blue Ivy','Moon Unit','Honey Boo Boo','Diva Thin Muffin','Future','Bronx Mowgli','Saint','North','Sir','Rumi','Harlow Winter','Sparrow James','Cricket Pearl','
+      ),
+   'Violent'=>array(
+      'Zeus','Ajax','Ares','Diana','Mars','Agamemnon','Lothar','Aoife','Bellatrix','Hedwig','Joan','Ragnara','Ragnar','Xena','Zula','Yuki','Brienne','Èowyn','Imperator Furiosa','
+      ),
+   'Peaceful'=>array(
+       'Pax','Placido','Solomon','Paxton','Colm','Dove','Paciano','Salome','Paz','Serenity','Pacifica','Paloma','Salome','Eir','Blythe','Carol','Felicity','Joy','Feliciano','
+       ),
+   'Indescribable'=>array(
+       'Rogue','Gryphon','Rohnin','Alyx-Zandré','Khaytelynne','Taelur','Jaymyie','Azhleigh','Koreyie','Konnur','Zackheiree','McKayleighanne','Mickeighleigh','Kaeyleigh','Aeiyvah','Wolverine','
+       ),
+        );
+$lastNames = array(
+    'Addams','Bonaparte','Braxton','Cage','Carter','Cyrus','DeNiro','Jackson','Jenner','Jolie-Pitt','Kardashian','Paltrow','Spielberg','Stallone','Streep','Timberlake','Travolta','West','Willis','Barrymore','Seuss','Aniston','Clinton','Jagger','LaBeouf','Lennon','McCartney','Starr','Brosnan','Hathaway','Goldblum','Clooney','Mozart','Bullock','Dylan','Van Damme','Houdini','Galifinakis','Yankovic','Connery','Griffith-Banderas','Culkin','Aykroyd','Affleck','Kidman','Schwarzenegger','DiCaprio','Stallone','Pacino','Whalberg',
+        );
+
+//Pull random values
+$firstNameindex = array_rand($firstNames[$mood]);
+$lastNameindex = array_rand($lastNames);
+
+//Concatenate full name and display result
+$fullName = $firstNames[$mood][$firstNameindex].' '.$lastNames[$lastNameindex];
+        print("Your celebrity baby name is ".$fullName);
+exit;
