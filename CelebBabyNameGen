@@ -3,7 +3,7 @@
 <title>Celebrity Baby Name Generator</title>
 </head>
    <p>
-   How are you feeling today? 
+   How are you feeling today? Tell me your mood and I'll give you a name.
    </p> 
 <body>
 <?php
@@ -53,7 +53,7 @@ exit;
 <input type="radio" name="Mood" value="peaceful" /> Peaceful
 <input type="radio" name="Mood" value="indescribable" /> Indescribable
 
-<input type="submit" value="Generate My Celebrity Baby Name based on my mood!" />
+<input type="submit" value="Submit" />
 </form>
 
 </body>
